@@ -1,0 +1,74 @@
+<div style="width: 650px; margin:auto; font-family:arial;"> <!-- Aqui vai ser a main -->
+    <div style="width: 300px; margin:auto; padding-top:20px;"> <!-- Essa div é o header do E-mail  -->
+        <img style="vertical-align: top; display:inline-block;height:50px;padding-right:5px; " src="http://nwtelecom.net.br/img/nwlogo.png" alt="Logo NW TELECOM"> <!-- Aqui fica a LOGO da NW TELECOM -->  
+
+        <p style="display:inline-block;font-size:11px;color:rgb(105,105,105);padding-left:5px;border-left:3px solid rgb(0,159,227);margin:0px;box-sizing:border-box"><b style="font-size:15px;color:rgb(0,159,227);box-sizing:border-box">NW TELECOM</b><br style="box-sizing:border-box">Shopping Park Design,<br style="box-sizing:border-box">Sala 64A<br style="box-sizing:border-box">Guará, Brasília-DF</p><!-- Aqui fica algumas informações sobre a NW TELECOM-->
+    </div><!-- FIM do header  -->
+    <div style="display:block;width:85%;margin:auto;"> <!-- Informações sobre o cliente -->
+        <br>
+        <h2 style="color:rgb(0,159,227);font-size:25px;margin:0;text-align:center;">Sua fatura PIX chegou!</h2><!-- Titulo do email -->
+        <br>
+        <table style="background:rgb(255,255,255) none repeat scroll 0 0;border:3px solid rgb(0,159,227);border-radius:9px;padding:20px;width:100%;"><!-- Tabela do Cliente -->
+            <tbody>
+                <tr style="vertical-align:top;">
+                    <td style="width:50%;border:solid white 0px;">
+                        <label>
+                            <font style="color: #696969; font-size:16px;">
+                                Emitido para
+                            </font>
+                            <p style="width:75%; text-transform: uppercase;">{{ nome do Cliente }}</p><!-- Nome do Cliente -->
+                            <font style="color: #696969; font-size:16px;">Valor original</font>
+                            <p>R$ {{ Valor da cobrança }}</p><!-- Valor da cobrança -->
+                        </label>
+                        
+                        <label>
+                            <font style="color: #696969; font-size:16px;">
+                                Data de vencimento
+                            </font>                                
+                            <p>{{ data de vencimento }}</p><!-- Data de vencimento -->
+                        </label>
+                    </td>
+                    <td style="width:70%;border:solid white 0px;float:right">
+                        <label>
+                            <font style="color: #696969; font-size:16px;">
+                                Documento
+                            </font>
+                            <p style="text-transform: uppercase;">000.000.000-00</p><!-- Nome do Cliente -->
+                            <font style="color: #696969; font-size:16px;">Valor a ser pago</font>
+                            <p>R$ {{ Valor a ser pago }}</p><!-- Valor da cobrança -->
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table style="background:rgb(255,255,255) none repeat scroll 0 0;border:3px solid rgb(0,159,227);border-radius:9px;padding:20px;width:100%">
+            <tbody>
+                <tr>
+                    <td style="border:solid white 0px;">
+                        <p style="color:rgb(105,105,105);font-size:13px;margin-top:0;margin-bottom:0;text-align:center;">Para pagamento, escaneie o QRCode abaixo:</p>
+                        <br>
+                        <img style="width:200px;height:200px;margin:auto;display:block;" src="https://api.qrserver.com/v1/create-qr-code/?data=00020126580014br.gov.bcb.pix013676dc16a0-873b-407a-a5fc-7ed8d7eb4f0a5204000053039865802BR5917Josue Juca Nonato6008Brasilia62080504mpda63045E10" alt="QRCode"><!-- API do QRCode -->
+                        <p style="color:rgb(105,105,105);font-size:13px;margin-top:20px;padding-bottom:5px;text-align:center;">Se preferir copie o código PIX abaixo:</p>
+                        <center>
+                            <p style="background:rgb(239,239,239) none repeat scroll 0% 0%;color:rgb(46,46,46);font-size:11px;margin-top:0px;margin-bottom:0;padding:10px;text-align:center">
+                             <!-- Codigo do PIX -->   00020126580014br.gov.bcb.pix013676dc16a0-873b-407a-a5fc-7ed8d7eb4f0a5204000053039865802BR5917Josue Juca Nonato6008Brasilia62080504mpda63045E10
+                            </p>
+                        </center>
+                        <p style="color:rgb(105,105,105);font-size:13px;margin-top:20px;margin-bottom:0px;text-align:center">Após isso, entre no aplicativo do seu banco e efetue o pagamento.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table style="background:rgb(226,247,241) none repeat scroll 0% 0%;border-radius:9px;padding:10px;width:100%"> <!-- Tebela de dicas -->
+            <tbody>
+               <tr>
+                  <td>
+                     <p style="font-size:14px;color:black"><font style="font-size:25px;color:black"><b>#</b></font><font style="font-size:25px;color:rgb(0,159,227)"><b><i><a style="color:rgb(0,159,227);" href="https://ixc.nwtelecom.com.br/central_assinante_web/">Central do assinante</a></i></b></font><br>A Central do Assinante permite que seus clientes consultem as faturas e contratos, realizem impressões de notas e relatórios e façam testes de velocidade da sua rede. <a style="color:rgb(0,159,227);"  href="https://ixc.nwtelecom.com.br/central_assinante_web/">Para acessar a central do assinante aperte aqui.</a><br><font style="font-size:25px;color:black"><b>#</b></font><font style="font-size:25px;color:rgb(0,159,227)"><b><i>Dica</i></b></font><br>Pague com o Pix, é fácil e rápido, é possível fazer o pagamento 24h por dia, 7 dias por semana. Os pagamentos pelo Pix são processados na hora - ou seja, não é necessário esperar horas ou até dias para processar, como acontece com boletos.<br><font style="font-size:25px;color:black"><b>#</b></font><font style="font-size:25px;color:rgb(0,159,227)"><b><i>Segurança</i></b></font><br>Você sabia que é muito mais seguro receber por PIX? Com o processamento feito na hora, não temos problemas de duplicidade ou erros de pagamento.</p>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+    </div>
+</div>
